@@ -6,13 +6,13 @@
 <!--- For this worksheet, answer the following questions --->
 
 ## Q1: What does it mean to map/align reads to a reference?
-Answer:
+Answer: Reconstruct reads to build sequence/genome based on a reference genome
 
 ## Q2: What read mapper does the mapping_cleaned_reads.sh script use?
-Answer:
+Answer: bwa
 
 ## Q3: Both Illumina and Nanopore reads are used for this assignment. What are the major differences between the methodology used for these sequencing platforms?
-Answer:
+Answer: Illumina: Short reads. Nanopore: long reads
 
 ## Q4: What differences do you notice between the Illumina and Nanopre raw_data fastq file sizes? Which are larger?
 Answer:
