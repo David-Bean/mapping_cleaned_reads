@@ -1,7 +1,7 @@
 # Mapping Cleaned Reads Worksheet
 
 <!--- Write name below --->
-## Name:
+## Name: David
 
 <!--- For this worksheet, answer the following questions --->
 
