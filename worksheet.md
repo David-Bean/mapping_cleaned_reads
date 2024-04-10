@@ -88,16 +88,27 @@ ERR2850136_cleaned.fastq:3
 ERR2850137_cleaned.fastq:5
 
 ```
-Answer: Some of the nanopore cleaned fastq files have 0 or 1 sequence in them.
+Answer: Some of the nanopore cleaned fastq files have 0 or 1 sequence in them. The raw reads only contained one fastq file that was empty, the rest had thousands of reads
 
 ## Q7: What is the average read depth for the Illumina data across all samples for the genomic regions that were mapped to?
-Answer:
+```
+[u1526388@lonepeak2:mapped_reads]$ samtools depth  *.bam |  awk '{sum+=$3} END { print "Average = ",sum/NR}'
+Average =  37790.1
+```
+Answer: 37790.1
 
 ## Q8: What is the average read depth for the Illumina data across all samples for all genomic regions?
-Answer:
+```
+[u1526388@lonepeak2:mapped_reads]$ samtools depth -a *.bam |  awk '{sum+=$3} END { print "Average = ",
+sum/NR}'
+Average =  337.961
+```
+Answer: 338
 
 ## Q9: What is the average read depth for the Nanopore data across all samples for the genomic regions that were mapped to?
 Answer:
+Average =  0.0465426
 
 ## Q10: What is the average read depth for the Nanopore data across all samples for all genomic regions?
 Answer:
+Average =  0.0176322
